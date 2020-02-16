@@ -1,0 +1,72 @@
+//User
+{
+    "_id":"zx",
+    "username":"Jean-Bernard"
+}
+
+//Package
+{
+    "_id":"ObjectId",
+    "name":"Moon Conqueror",
+    "projects": [
+        {
+            "id":"ObjectId du projet (référence)",
+            "name":"Operator Matrix"
+        },
+        {
+            "id":"ObjectId du projet (référence)",
+            "name":"Power Monitoring"
+        },
+        {
+            "id":"ObjectId du projet (référence)",
+            "name":"ISS"
+        }
+    ]
+}
+
+//Project
+{
+    "_id":"ObjectId",
+    "name":"Operator Matrix",
+    "tasklist":["To Do", "Doing", "Help/Questions", "Bug fixes", "Done"]
+}
+
+//Task
+{
+    "_id":"ObjectId",
+    "projectRef":"ObjectId",
+    "currentTasklist":"To Do",
+    "name":"Faire une notif quand un TCN démarre",
+    "description":"bla bla bla popup à la con",
+    "priority":1,
+    "checklistList": [
+        {
+            "name":"Choses à faire",
+            "checklist":[
+                {
+                    "name":"design de la popup",
+                    "checked":false
+                },
+                {
+                    "name":"bla bla",
+                    "checked":true
+                }
+            ]
+        },
+        {
+            "name":"Bugs détectés",
+            "checklist":[
+                {
+                    "name":"elle disparaît pas",
+                    "checked":false
+                }
+            ]
+        }
+    ],
+    "comments":[
+        {
+            "user":{"id":"", "name":""},
+            "comment":"Wallah frer c nul ton truk"
+        }
+    ]
+}

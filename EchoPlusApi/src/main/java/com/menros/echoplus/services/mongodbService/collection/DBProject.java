@@ -5,6 +5,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Document(collection = "project")
@@ -18,7 +19,7 @@ public class DBProject {
     }
 
     public DBProject(ObjectId refPackage, String name) {
-        this(new ObjectId(), refPackage, name, new ArrayList<>());
+        this(new ObjectId(), refPackage, name, Arrays.asList("To Do", "Doing", "Help/Questions", "Bug fixes", "Done"));
     }
 
     public DBProject(ObjectId id, ObjectId refPackage, String name, List<String> tasklist) {
